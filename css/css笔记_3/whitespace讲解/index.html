@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CSS white-space属性详解 | Cary</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    
+    <meta name="description" content="专注于记录一些从开始到入门踩过的坑">
+    <link rel="preload" href="/assets/css/0.styles.b8e99327.css" as="style"><link rel="preload" href="/assets/js/app.b1624e8e.js" as="script"><link rel="preload" href="/assets/js/2.12e8692c.js" as="script"><link rel="preload" href="/assets/js/17.438c44df.js" as="script"><link rel="prefetch" href="/assets/js/10.eff93b86.js"><link rel="prefetch" href="/assets/js/11.793fbf77.js"><link rel="prefetch" href="/assets/js/12.4a71ec38.js"><link rel="prefetch" href="/assets/js/13.093a470d.js"><link rel="prefetch" href="/assets/js/14.c529c00a.js"><link rel="prefetch" href="/assets/js/15.9cc56e10.js"><link rel="prefetch" href="/assets/js/16.f161731c.js"><link rel="prefetch" href="/assets/js/18.c02afc3a.js"><link rel="prefetch" href="/assets/js/19.c4b19fba.js"><link rel="prefetch" href="/assets/js/20.dec86c76.js"><link rel="prefetch" href="/assets/js/21.1b6d07c1.js"><link rel="prefetch" href="/assets/js/22.44c5118e.js"><link rel="prefetch" href="/assets/js/23.4da8ff8e.js"><link rel="prefetch" href="/assets/js/24.fdc9730d.js"><link rel="prefetch" href="/assets/js/25.806070ea.js"><link rel="prefetch" href="/assets/js/26.d8d44464.js"><link rel="prefetch" href="/assets/js/27.03a5f16f.js"><link rel="prefetch" href="/assets/js/28.e9711547.js"><link rel="prefetch" href="/assets/js/29.c20512e0.js"><link rel="prefetch" href="/assets/js/3.964ad172.js"><link rel="prefetch" href="/assets/js/30.ff71561f.js"><link rel="prefetch" href="/assets/js/31.44701f47.js"><link rel="prefetch" href="/assets/js/32.060499f3.js"><link rel="prefetch" href="/assets/js/33.c8f8e25c.js"><link rel="prefetch" href="/assets/js/34.484e7f5b.js"><link rel="prefetch" href="/assets/js/35.d0e86e52.js"><link rel="prefetch" href="/assets/js/36.6e9c597a.js"><link rel="prefetch" href="/assets/js/37.d0ea72cc.js"><link rel="prefetch" href="/assets/js/38.635da6e1.js"><link rel="prefetch" href="/assets/js/39.c6c12926.js"><link rel="prefetch" href="/assets/js/4.9e3305df.js"><link rel="prefetch" href="/assets/js/40.77988a3a.js"><link rel="prefetch" href="/assets/js/41.09ced7b0.js"><link rel="prefetch" href="/assets/js/42.f0c83ede.js"><link rel="prefetch" href="/assets/js/43.8433eb78.js"><link rel="prefetch" href="/assets/js/44.9a1d5c63.js"><link rel="prefetch" href="/assets/js/45.cb79a166.js"><link rel="prefetch" href="/assets/js/5.536117a3.js"><link rel="prefetch" href="/assets/js/6.fdeca71c.js"><link rel="prefetch" href="/assets/js/7.b91670df.js"><link rel="prefetch" href="/assets/js/8.53ae3032.js"><link rel="prefetch" href="/assets/js/9.2475cef8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b8e99327.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Cary</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  目录
+</a></div><div class="nav-item"><a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  目录
+</a></div><div class="nav-item"><a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>CSS white-space属性详解</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/css/css%E7%AC%94%E8%AE%B0_3/whitespace%E8%AE%B2%E8%A7%A3/#定义" class="sidebar-link">定义</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/css/css%E7%AC%94%E8%AE%B0_3/whitespace%E8%AE%B2%E8%A7%A3/#white-space-nowrap-不换行" class="sidebar-link">white-space: nowrap ——不换行</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/css/css%E7%AC%94%E8%AE%B0_3/whitespace%E8%AE%B2%E8%A7%A3/#white-space-nowrap-会导致文本不换行" class="sidebar-link">white-space: nowrap ——会导致文本不换行</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/css/css%E7%AC%94%E8%AE%B0_3/whitespace%E8%AE%B2%E8%A7%A3/#white-space-pre-保留空格不换行" class="sidebar-link">white-space: pre ——保留空格不换行</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/css/css%E7%AC%94%E8%AE%B0_3/whitespace%E8%AE%B2%E8%A7%A3/#white-space-pre-wrap-保留空格换行" class="sidebar-link">white-space: pre-wrap ——保留空格换行</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/css/css%E7%AC%94%E8%AE%B0_3/whitespace%E8%AE%B2%E8%A7%A3/#white-space-pre-line-合并空格换行" class="sidebar-link">white-space: pre-line ——合并空格换行</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="css-white-space属性详解"><a href="#css-white-space属性详解" class="header-anchor">#</a> CSS white-space属性详解</h1> <h2 id="定义"><a href="#定义" class="header-anchor">#</a> 定义</h2> <p>css white-space这个css样式，用来设置element元素对内容中的空格的处理方式，有着几个可选值normal, nowrap, pre, pre-wrap, pre-line。没有设置white-space属性，则默认为white-space:normal<br></p> <p>normal表示合并空格，多个相邻空格合并成一个空格，<font color="red">在源码中的换行作为空格处理</font>，只会根据容器的大小进行自动换行。
+这里的空白是值空白字符，包括空格，制表符等空白字符，下面为了行文方便，统一用“空格”代表。
+<br> <br></p> <h2 id="white-space-nowrap-不换行"><a href="#white-space-nowrap-不换行" class="header-anchor">#</a> white-space: nowrap ——不换行</h2> <p>white-space:nowrap和normal一样，也合并空格，但是不会根据容器大小换行，表示不换行。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.wscont</span><span class="token punctuation">{</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span>12px<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span>12px<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span>300px<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>#f1f1f1<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span>1px solid #bababa<span class="token punctuation">;</span>
+    <span class="token property">line-height</span><span class="token punctuation">:</span>32px<span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&quot;微软雅黑&quot;</span><span class="token punctuation">;</span>
+    <span class="token property">white-space</span><span class="token punctuation">:</span>nowrap<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+ 
+&lt;div class=<span class="token string">&quot;wscont&quot;</span>&gt;
+    妹纸前端测试white-space属性<span class="token punctuation">,</span>
+    white-space属性的keywrod值。
+&lt;/div&gt;
+</code></pre></div><p>效果如下:</p> <p><img src="https://raw.githubusercontent.com/Cooohooo/cary-notebook-image/master/images/whitespace_%E6%95%88%E6%9E%9C%E5%9B%BE1.png" alt="whitespace_效果图1"></p> <h2 id="white-space-nowrap-会导致文本不换行"><a href="#white-space-nowrap-会导致文本不换行" class="header-anchor">#</a> white-space: nowrap ——会导致文本不换行</h2> <p>经常和overflow, text-overflow一起使用，如下：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.wscont</span><span class="token punctuation">{</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span>12px<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span>12px<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span>300px<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>#f1f1f1<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span>1px solid #bababa<span class="token punctuation">;</span>
+    <span class="token property">line-height</span><span class="token punctuation">:</span>32px<span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&quot;微软雅黑&quot;</span><span class="token punctuation">;</span>
+    <span class="token property">white-space</span><span class="token punctuation">:</span>nowrap<span class="token punctuation">;</span>
+    <span class="token property">overflow</span><span class="token punctuation">:</span>hidden<span class="token punctuation">;</span>
+    <span class="token property">text-overflow</span><span class="token punctuation">:</span> ellipsis<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+ 
+&lt;div class=<span class="token string">&quot;wscont&quot;</span>&gt;
+    妹纸前端测试white-space属性<span class="token punctuation">,</span>
+    white-space属性的keywrod值。
+&lt;/div&gt;
+</code></pre></div><p>效果如下</p> <p><img src="https://raw.githubusercontent.com/Cooohooo/cary-notebook-image/master/images/whitespace_%E6%95%88%E6%9E%9C%E5%9B%BE2.png" alt="whitespace_效果图2"></p> <h2 id="white-space-pre-保留空格不换行"><a href="#white-space-pre-保留空格不换行" class="header-anchor">#</a> white-space: pre ——保留空格不换行</h2> <p>white-space:pre的作用是保持源码中的空格，有几个空格算几个空格显示，同时换行<font color="red">只认源码中的换行和&lt;br/&gt;标签</font></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.wscont</span><span class="token punctuation">{</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span>12px<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span>12px<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>#f1f1f1<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span>1px solid #bababa<span class="token punctuation">;</span>
+    <span class="token property">line-height</span><span class="token punctuation">:</span>32px<span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&quot;微软雅黑&quot;</span><span class="token punctuation">;</span>
+    <span class="token property">white-space</span><span class="token punctuation">:</span>pre<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+ 
+&lt;div class=<span class="token string">&quot;wscont&quot;</span>&gt;
+        妹纸前端测试white-space属性<span class="token punctuation">,</span>我们都是好朋友，春天到了，交配的季节又到了。
+    white-space属性的keywrod值。&lt;br/&gt;妹纸的学习园地，妹纸的前端乐园。
+&lt;/div&gt;
+</code></pre></div><p>效果如下</p> <p><img src="https://raw.githubusercontent.com/Cooohooo/cary-notebook-image/master/images/whitespace_%E6%95%88%E6%9E%9C%E5%9B%BE3.png" alt="whitespace_效果图3"></p> <p>效果很明显，源码中的换行在显示中也换行了，源码中的多个空格也保留了。并且pre在没有碰到源码换行和&lt;br/&gt;的时候是不换行了，不会去自适应容器换行</p> <h2 id="white-space-pre-wrap-保留空格换行"><a href="#white-space-pre-wrap-保留空格换行" class="header-anchor">#</a> white-space: pre-wrap ——保留空格换行</h2> <p>white-space:pre-wrap的作用是保留空格，并且除了碰到源码中的换行和<br>会换行外，还会自适应容器的边界进行换行。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.wscont</span><span class="token punctuation">{</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span>12px<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span>12px<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span>400px<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>#f1f1f1<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span>1px solid #bababa<span class="token punctuation">;</span>
+    <span class="token property">line-height</span><span class="token punctuation">:</span>32px<span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&quot;微软雅黑&quot;</span><span class="token punctuation">;</span>
+    <span class="token property">white-space</span><span class="token punctuation">:</span>pre-wrap<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+ 
+&lt;div class=<span class="token string">&quot;wscont&quot;</span>&gt;
+        妹纸前端测试white-space属性<span class="token punctuation">,</span>我们都是好朋友，春天到了，交配的季节又到了。
+    white-space属性的keywrod值。&lt;br/&gt;妹纸的学习园地，妹纸的前端乐园。
+&lt;/div&gt;
+</code></pre></div><p>效果如下</p> <p><img src="https://raw.githubusercontent.com/Cooohooo/cary-notebook-image/master/images/whitespace_%E6%95%88%E6%9E%9C%E5%9B%BE4.png" alt="whitespace_效果图4"></p> <h2 id="white-space-pre-line-合并空格换行"><a href="#white-space-pre-line-合并空格换行" class="header-anchor">#</a> white-space: pre-line ——合并空格换行</h2> <p>white-space:pre-line的作用是合并空格，换行和white-space:pre-wrap一样，遇到源码中的换行和&lt;br/&gt;会换行，碰到容器的边界也会换行。</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.wscont</span><span class="token punctuation">{</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span>12px<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span>12px<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span>400px<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span>#f1f1f1<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span>1px solid #bababa<span class="token punctuation">;</span>
+    <span class="token property">line-height</span><span class="token punctuation">:</span>32px<span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&quot;微软雅黑&quot;</span><span class="token punctuation">;</span>
+    <span class="token property">white-space</span><span class="token punctuation">:</span>pre-line<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+ 
+&lt;div class=<span class="token string">&quot;wscont&quot;</span>&gt;
+        妹纸前端测试white-space属性<span class="token punctuation">,</span>我们都是好朋友，春天到了，交配的季节又到了。
+    white-space属性的keywrod值。&lt;br/&gt;妹纸的学习园地，妹纸的前端乐园。
+&lt;/div&gt;
+</code></pre></div><p>效果如图</p> <p><img src="https://raw.githubusercontent.com/Cooohooo/cary-notebook-image/master/images/whitespace_%E6%95%88%E6%9E%9C%E5%9B%BE5.png" alt="whitespace_效果图5"></p> <p>white-space:pre-line会保留源码中的换行，但是不会保留源码中的空格。</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.b1624e8e.js" defer></script><script src="/assets/js/2.12e8692c.js" defer></script><script src="/assets/js/17.438c44df.js" defer></script>
+  </body>
+</html>
